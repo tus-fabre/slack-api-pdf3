@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>グラフ</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        const ctx = document.getElementById("myChart");
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["中国", "インド", "アメリカ", "インドネシア", "ブラジル"],
+                datasets: [{
+                    label: '100万人',
+                    data: [1404.33, 1378.6, 330.09, 270.2, 211.42],
+                    backgroundColor: "blue"
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        min: 100
+                    }
+                },
+                plugins: {
+                    legend: {
+                      position: 'right',
+                    },
+                    title: {
+                      display: true,
+                      text: '世界人口トップ5 (2022年)'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
