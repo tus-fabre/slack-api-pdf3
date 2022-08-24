@@ -4,7 +4,7 @@
  * [FILE] app.js
  *
  * [DESCRIPTION]
- *  Lesson 8c - PDFファイルに画像を追加する
+ *  Lesson PDF 3 - PDFファイルに画像を追加する
  * 
  * [NOTE]
  */
